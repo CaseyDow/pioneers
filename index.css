@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+  font-family: Itim, Verdana, sans-serif;
+  line-height: 1.5;
+}
+* {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding-bottom: 110px;
+  background-color: #cd6451;
+}
+
+@font-face {
+  font-family: "Itim";
+  src: url("/fonts/Itim.ttf");
+}
+
+@font-face {
+  font-family: "Rock Salt";
+  src: url("/fonts/RockSalt.ttf");
+}
+
+h1, h2, h3, p {
+  margin: 10px 0;
+  color: #222;
+}
+h1 {
+  font-family: "Rock Salt";
+  font-size: 10vw;
+}
+h2 {
+  font-size: 10vw;
+}
+h3 {
+  font-size: calc(12px + 2vw);
+}
+p {
+  font-size: calc(12px + 1vw);
+}
+@media (min-width: 400px) {
+  h1, h2 {
+    font-size: calc(36px + 1vw);
+  }
+  h3 {
+    font-size: calc(16px + 1vw);
+  }
+  p {
+    font-size: calc(14px + 0.5vw);
+  }
+}
+@media (min-width: 600px) {
+  h1 {
+    font-size: calc(5vw + 12px);
+  }
+}
+
+.half, .sixty, .fourty {
+  float: left;
+}
+.half {
+  width: 50%;
+}
+.sixty {
+  width: 60%;
+  padding-left: 20px;
+}
+.fourty {
+  width: 40%;
+}
+.palm {
+  width: 30%;
+}
+
+.person {
+  width: 100%;
+  height: 40vw;
+  min-height: 30vh;
+  object-fit: cover;
+  border: 7px solid #222;
+  margin-top: 20px;
+}
+
+@media (orientation:portrait) {
+  .half, .sixty, .fourty {
+    width: 100%;
+    padding-left: 0;
+  }
+  .title {
+    padding: 1vh 0;
+    text-align: center;
+  }
+  .palm {
+    width: 90%;
+  }
+  .person {
+    height: 80vw;
+  }
+}
+
+@media (orientation:landscape) {
+  .right-pad {
+    padding-right: 10px;
+  }
+  .left-pad {
+    padding-left: 10px;
+  }
+}
+
+.topbox {
+  width: 80vw;
+  min-height: calc(100vh - 200px);
+  background-color: #dc9;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 10px double #222;
+  align-items: center;
+}
+
+section {
+  display: table;
+}
+
+hr {
+  border: none;
+  background-color: #222;
+  border-radius: 5px;
+  height: 10px;
+  margin: 0 10%;
+}
+
+a.button {
+  width: 80%;
+  margin: auto;
+  background-color: #222;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #cd6451;
+}
+
+a p {
+  color: inherit;
+}
+
+a:hover {
+  color: #cd8b51;
+}
+
+iframe {
+  border: 7px solid #222; width: 100%; background: #222; margin-top: 20px;
+}
