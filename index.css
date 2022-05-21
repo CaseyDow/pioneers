@@ -15,12 +15,12 @@ body {
 
 @font-face {
   font-family: "Itim";
-  src: url("/fonts/Itim.ttf");
+  src: url("./fonts/Itim.ttf");
 }
 
 @font-face {
   font-family: "Rock Salt";
-  src: url("/fonts/RockSalt.ttf");
+  src: url("./fonts/RockSalt.ttf");
 }
 
 h1, h2, h3, p {
